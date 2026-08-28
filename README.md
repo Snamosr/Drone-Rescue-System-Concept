@@ -48,4 +48,4 @@ However, the preliminary engineering phase successfully established an analytica
 ## Team & Credits
 * [Mark Asare](https://www.linkedin.com/in/mark-asare-td/) - *Project Lead & Flight Co-Pilot*
 * [Amos Ablorh]() [LinkedIn](https://www.linkedin.com/in/amos-ablorh/) - *Co-Lead for DRS Development (Research, Aerodynamic Sizing, CAD Modeling, System Concept)*
-* [Rene Novor]() [LinkedIn](https://www.linkedin.com/in/raynayx/) - *DRS Development Supervisor (Technical Oversight & Review), Embedded System Integration*
+* [Rene Novor](https://github.com/raynayx) [LinkedIn](https://www.linkedin.com/in/raynayx/) - *DRS Development Supervisor (Technical Oversight & Review), Embedded System Integration*
