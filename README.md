@@ -46,6 +46,6 @@ While the initial 3D modeling and aerodynamic sizing were completed, full physic
 However, the preliminary engineering phase successfully established an analytical blueprint for low-cost UAV recovery, proving that a $2.37\text{ m}^2$ canopy deployed via a simple mechanical spring-servo latch can safely recover a $2.0\text{ kg}$ platform within tight altitude margins.
 
 ## Team & Credits
-* [Mark Asare]() - *Project Lead & Flight Co-Pilot*
-* [Amos Ablorh]() [LinkedIn]() - *Co-Lead for DRS Development (Research, Aerodynamic Sizing, CAD Modeling, System Concept)*
-* [Rene Novor]() [LinkedIn]() - *DRS Development Supervisor (Technical Oversight & Review), Embedded System Integration*
+* [Mark Asare](https://www.linkedin.com/in/mark-asare-td/) - *Project Lead & Flight Co-Pilot*
+* [Amos Ablorh]() [LinkedIn](https://www.linkedin.com/in/amos-ablorh/) - *Co-Lead for DRS Development (Research, Aerodynamic Sizing, CAD Modeling, System Concept)*
+* [Rene Novor]() [LinkedIn](https://www.linkedin.com/in/raynayx/) - *DRS Development Supervisor (Technical Oversight & Review), Embedded System Integration*
