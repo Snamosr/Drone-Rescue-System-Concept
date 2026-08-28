@@ -4,21 +4,25 @@
 
 **Tools:** CAD Modeling (Fusion 360) | Analytical Fluid Dynamics |
 
-**Target Platform:** F450 ArduPilot Quadcopter.
+**Target Platform:** F450 ArduPilot Quadcopter (2.0 kg MTOW).
 
 **Date:** 2025
 
+---
+
 ## 1. Context & Motivation.
+During operational flight testing of a F450 quadcopter drone for agricultural implementation, repeated crash events caused by mid-air instability, complex in-flight manoeuvres, rapid takeoffs and harsh landings, and motor/ESC failures resulted in expensive component repairs and project delays. While off-the shelf commercial recovery systems (e.g. DRS-M210, DRS-300, DRS-15, UAVOS Emergency Rescue System, PARASAFE, etc.) existed, it proved cost-prohibitive for the test vehicle's budget, and spatial integration challenge for our custom F450 frame.
+
+To mitigate hardware loss, the team initiated the conceptual design for a low-cost, lightweight, custom-integrated mechanical deployment emergency Drone Rescue System (DRS) tailored to low-altitude recovery scenarios.
 
 ## Design Requirements & Analytical Sizing
-
-### Performance Parameters
-* **Max Takeoff Weight (MTOW):** $2.0\text{ kg}$
+### a. Performance Parameters
+* **Max Takeoff Weight (MTOW):** $2.0\text{ kg}$ (with provision for future payload scaling);
 * **Max Operating Altitude:** $200\text{ m AGL}$
 * **Target Terminal Descent Velocity:** $3.0\text{ m/s}$ to $5.0\text{ m/s}$ (Ensuring structural survival upon ground impact).
 * **Deployment Response Time:** $0.3\text{ s} - 0.5\text{ s}$
 
-### Aerodynamic Canoy Sizing
+### b. Aerodynamic Canoy Sizing
 Using standard fluid dynamic drag principles, the required projected surface area ($A$) for a hemispherical canopy design with ($C_d\approx 1.5$) under sea-level atmospheric conditions ($\rho = 1.225\text{ kg/m}^3$) targeting a safe landing velocity of $3\text{ m/s}$ for a $2.0\text{ kg}$ vehicle:
 
 $$A =\frac{2 m g}{\rho \cdot C_d \cdot v^2} = \frac{2 (2.0)(9.81)}{(1.225)(1.5)(3.0)^2} = 2.37\text{ m}^2$$
@@ -29,9 +33,7 @@ $$r = \sqrt\frac{A}{\pi} = \sqrt\frac{2.37}{\pi} = 0.8686\text{ m}$$
 
 $$\implies D = 1.737\text{ m}$$
 
----
-
-Mechanical Ejection Concept
+### c. Mechanical Ejection Concept
 To achieve clean deployment into undisturbed air within the strict $0.3\text{ s} - 0.5\text{ s}$ ejections window without relying on pyrotechnic charges, a mechanical spring-piston canister mechanism was designed:
 
 * **Ejection Mechanism:** A $150\text{ mm}$ cylindrical canister containing a compression spring ($\sim 12\text{ N}$ force) driving a sliding piston placed plate to eject the canopy at a target velocity of $\sim 2\text{ m/s}$ into clean air outside the propeller wash.
