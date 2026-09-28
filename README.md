@@ -1,21 +1,37 @@
-# Emergency Drone Rescue System (DRS) Concept | Mechanical Design & Systems Integration.
+# Emergency Drone Rescue System (DRS) Concept
+
+## Mechanical Design, Analytical Sizing & Systems Integration.
 ---
 **Institution:** Ghana-India Kofi Annan Centre for Excellence in ICT, Sunyani.
 
-**Tools:** CAD Modeling (Fusion 360) | Analytical Fluid Dynamics |
+**Target Platform:** F450 ArduPilot Quadcopter.
 
-**Target Platform:** F450 ArduPilot Quadcopter (2.0 kg MTOW).
+**Target MTOW:** $2.0\text{ kg}$
+
+**Tools:** CAD Modeling (Fusion 360) | ArduPilot | Analytical Fluid Dynamics | Embedded System Concepts |
 
 **Date:** 2025
 
 ---
 
-## 1. Context & Motivation.
-During operational flight testing of a F450 quadcopter drone for agricultural implementation, repeated crash events caused by mid-air instability, complex in-flight manoeuvres, rapid takeoffs and harsh landings, and motor/ESC failures resulted in expensive component repairs and project delays. While off-the shelf commercial recovery systems (e.g. DRS-M210, DRS-300, DRS-15, UAVOS Emergency Rescue System, PARASAFE, etc.) existed, it proved cost-prohibitive for the test vehicle's budget, and spatial integration challenge for our custom F450 frame.
+## 1. Project Overview.
+During operational flight testing of a F450 quadcopter drone for agricultural applications, repeated crash events caused by mid-air instability, complex in-flight manoeuvres, rapid takeoffs and harsh landings, and motor/ESC failures resulted in expensive component repairs and project delays. While off-the shelf commercial recovery systems (e.g. DRS-M210, DRS-300, DRS-15, UAVOS Emergency Rescue System, PARASAFE, etc.) existed, it proved cost-prohibitive for the test vehicle's budget, and spatial integration challenge for our custom F450 frame.
 
-To mitigate hardware loss, the team initiated the conceptual design for a low-cost, lightweight, custom-integrated mechanical deployment emergency Drone Rescue System (DRS) tailored to low-altitude recovery scenarios.
+To mitigate hardware loss, the team explored the conceptual design for a **low-cost, lightweight, custom-integrated mechanical deployment emergency Drone Rescue System (DRS)** capable of deploying a recovery parachute at low altitude following an emergency event.
 
-## Design Requirements & Analytical Sizing
+
+## 2. Design Objectives
+* Reduce the likelihood of extensive damage following an inflight emergency.
+* Provide rapid deployment of a recovery parachute.
+* Operate within the limited space available on an F450 platform.
+* Minimise additional mass carried by the UAV.
+* Avoid pyrotechnic deployment methods.
+* Provide both autonomous and manual activation possibilities.
+* Use components and mechanisms that could be fabricated or sourced at low cost.
+* Deploy the parachute clear of the propeller wash where practical.
+
+
+## 3. Design Requirements & Analytical Sizing
 ### a. Performance Parameters
 * **Max Takeoff Weight (MTOW):** $2.0\text{ kg}$ (with provision for future payload scaling);
 * **Max Operating Altitude:** $200\text{ m AGL}$
