@@ -58,12 +58,22 @@ To achieve clean deployment into undisturbed air within the strict $0.3\text{ s}
 
 ---
 
-## Project Outcome & Engineering Trade-Offs
-While the initial 3D modeling and aerodynamic sizing were completed, full physical prototyping was deprioritized due to project timeline constraints and resource re-allocation toward the primary agricultural payload development.
+## Project Outcome
+The project established a preliminary engineering design for a lightweight, mechanically deployed UAV recovery system.
 
-However, the preliminary engineering phase successfully established an analytical blueprint for low-cost UAV recovery, proving that a $2.37\text{ m}^2$ canopy deployed via a simple mechanical spring-servo latch can safely recover a $2.0\text{ kg}$ platform within tight altitude margins.
+The work progressed from identifying the operational problem through preliminary requirement definition, aerodynamic sizing, mechanism selection, spring-powered ejection concept development, release-latch design, component selection, CAD development, and control-integration considerations.
+
+While the initial CAD modeling and aerodynamic sizing were completed, full physical prototyping was deprioritized due to project timeline constraints and resource re-allocation toward the primary agricultural payload development.
+
+However, the preliminary engineering phase successfully provided an analytical basis for a low-cost UAV recovery, suggesting a $2.37\text{ m}^2$ canopy deployed via a simple mechanical spring-servo latch can safely recover a $2.0\text{ kg}$ platform within tight altitude margins.
 
 ## Team & Credits
 * [Mark Asare](https://www.linkedin.com/in/mark-asare-td/) - *Project Lead & Flight Co-Pilot*
 * [Amos Ablorh](https://github.com/Snamosr) [LinkedIn](https://www.linkedin.com/in/amos-ablorh/) - *Co-Lead for DRS Development (Research, Aerodynamic Sizing, CAD Modeling, System Concept)*
-* [Rene Novor](https://github.com/raynayx) [LinkedIn](https://www.linkedin.com/in/raynayx/) - *DRS Development Supervisor (Technical Oversight & Review), Embedded System Integration*
+* [Rene Novor](https://github.com/raynayx) [LinkedIn](https://www.linkedin.com/in/raynayx/) - *DRS Development Supervisor (Technical Oversight/Review), Embedded System Integration*
+
+---
+
+## **STATUS**
+## Conceptual design / analytical development - prototype not completed
+This repository documents the engineering development and preliminary calculations behind the proposed system. Numerical results should be interpreted within the assumptions and limitations stated above.
