@@ -1,4 +1,4 @@
-# Emergency Drone Rescue System (DRS) Concept
+# Emergency Drone Rescue System (DRS) - Conceptual Design
 
 ## Mechanical Design, Analytical Sizing & Systems Integration.
 ---
@@ -14,41 +14,58 @@
 
 ---
 
-## 1. Project Overview.
+## 1. Background.
 During operational flight testing of a F450 quadcopter drone for agricultural applications, repeated crash events caused by mid-air instability, complex in-flight manoeuvres, rapid takeoffs and harsh landings, and motor/ESC failures resulted in expensive component repairs and project delays. While off-the shelf commercial recovery systems (e.g. DRS-M210, DRS-300, DRS-15, UAVOS Emergency Rescue System, PARASAFE, etc.) existed, it proved cost-prohibitive for the test vehicle's budget, and spatial integration challenge for our custom F450 frame.
 
 To mitigate hardware loss, the team explored the conceptual design for a **low-cost, lightweight, custom-integrated mechanical deployment emergency Drone Rescue System (DRS)** capable of deploying a recovery parachute at low altitude following an emergency event.
 
 
-## 2. Design Objectives
-* Reduce the likelihood of extensive damage following an inflight emergency.
-* Provide rapid deployment of a recovery parachute.
+## 2. Overview
+The Drone Rescue System (DRS) is a conceptual recovery system intended to reduce the impact of a herd landing or loss of control in a small unmanned aerial vehicle (UAV). The concept combines a parachute, a spring-loaded deployment mechanism, and a servo-operated restraint.
+
+This project explores preliminary parachute sizing, mechanical deployment, component selection, and integration with a UAV control concept. Calculations and design choices are intended to provide a basis for further engineering development; they do not establish that the system is safe or flight-ready.
+
+## 3. Design Objectives
+* Develop a compact emergency recovery mechanism for a lightweight UAV.
+* Investigate rapid deployment of a recovery parachute following an emergency.
 * Operate within the limited space available on an F450 platform.
-* Minimise additional mass carried by the UAV.
+* Minimise additional payload mass packaging requirements.
 * Avoid pyrotechnic deployment methods.
-* Provide both autonomous and manual activation possibilities.
+* investigate both autonomous and manual activation possibilities.
 * Use components and mechanisms that could be fabricated or sourced at low cost.
 * Deploy the parachute clear of the propeller wash where practical.
 
 
 ## 3. Design Requirements & Analytical Sizing
-### a. Performance Parameters
-* **Max Takeoff Weight (MTOW):** $2.0\text{ kg}$ (with provision for future payload scaling);
-* **Max Operating Altitude:** $200\text{ m AGL}$
-* **Target Terminal Descent Velocity:** $3.0\text{ m/s}$ to $5.0\text{ m/s}$ (Ensuring structural survival upon ground impact).
-* **Deployment Response Time:** $0.3\text{ s} - 0.5\text{ s}$
+### a. Preliminary Design Requirements:
+| Parameter | Preliminary target |
+| ----------- | ----------- |
+| **Max Takeoff Weight (MTOW)** | $2.0\text{ kg}$ (with provision for future payload scaling) |
+| **Max Operating Altitude** | $200\text{ m AGL}$ |
+| **Target Terminal Descent Velocity** | $3.0\text{ m/s}$ to $5.0\text{ m/s}$ (Ensuring structural survival upon ground impact) |
+| **Target Deployment Response Time** | $0.3\text{ s} - 0.5\text{ s}$ |
+| Target piston ejection velocity |  $\approx 2\text{ m/s}$ |
+| Canister length | $150\text{ mm}$ |
+| Canister diameter | $65\text{ mm}$ |
+| Assumed piston + parachute mass | $\sim\ 0.3\text{ kg}$ |
+| Assumed piston travel | $40\text{ mm}$
 
-### b. Aerodynamic Canoy Sizing
+*The values provided in the table represent initial design targets and assumptions.*
+
+### b. Parachute Canopy Sizing
 Using standard fluid dynamic drag principles, the required projected surface area ($A$) for a hemispherical canopy design with ($C_d\approx 1.5$) under sea-level atmospheric conditions ($\rho = 1.225\text{ kg/m}^3$) targeting a safe landing velocity of $3\text{ m/s}$ for a $2.0\text{ kg}$ vehicle:
 
 $$A =\frac{2 m g}{\rho \cdot C_d \cdot v^2} = \frac{2 (2.0)(9.81)}{(1.225)(1.5)(3.0)^2} = 2.37\text{ m}^2$$
 
-From the $$A = \pi \cdot r^2$$
+Assume a circular projected area [ $$A = \pi \cdot r^2$$ ] gives;
 
 $$r = \sqrt\frac{A}{\pi} = \sqrt\frac{2.37}{\pi} = 0.8686\text{ m}$$
 
 $$\implies D = 1.737\text{ m}$$
 
+The calculation produced a required projected area of approximately $2.37\ \text{m}^2$, corresponding to an equivalent circular diameter of approximately $1.74\ \text{m}$. This provided an initial basis for evaluating the canopy packaging and development mechanism.
+
+Limitations: The calculation assumes steady descent and a constant drag coefficient. Actual performance depends on canopy geometry, inflation dynamics, porosity, suspension-line arrangement, vehicle attitude and atmospheric conditions. The calculated area is a preliminary
 ### c. Mechanical Ejection Concept
 To achieve clean deployment into undisturbed air within the strict $0.3\text{ s} - 0.5\text{ s}$ ejections window without relying on pyrotechnic charges, a mechanical spring-piston canister mechanism was designed:
 
